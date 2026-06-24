@@ -1,0 +1,32 @@
+Imágenes necesarias para la página de Wordtris:
+
+1. hero-banner.jpg (1920x1080px) - Banner grande para la parte superior con efecto de fundido en la base
+2. character-mascot.png (300x350px) - Personaje mascota (zorro/mapache) para el bloque principal
+3. platform-button-1.png (80x80px) - Botón de plataforma 1 (naranja)
+4. platform-button-2.png (80x80px) - Botón de plataforma 2 (verde)
+5. platform-button-3.png (80x80px) - Botón de plataforma 3 (rojo)
+6. gameplay-left.gif (250x400px) - GIF animado mostrando mecánicas de juego (lado izquierdo)
+7. gameplay-right.gif (250x400px) - GIF animado mostrando mecánicas de juego (lado derecho)
+8. gameplay-center.png (400x300px) - Imagen central con instrucciones y botones
+9. wordtris-logo.png (300x150px) - Logo de Wordtris para la sección central
+
+Carrusel de capturas (todas 350x200px):
+10. screenshot-1.jpg - Captura del juego con texto descriptivo
+11. screenshot-2.jpg - Captura del juego con texto descriptivo
+12. screenshot-3.jpg - Captura del juego con texto descriptivo
+13. screenshot-4.jpg - Captura del juego con texto descriptivo
+14. screenshot-5.jpg - Captura del juego con texto descriptivo
+
+Iconos y elementos adicionales:
+15. favicon.ico (32x32px) - Icono para la pestaña del navegador
+16. bg-purple.jpg (1920x1080px) - Fondo púrpura degradado para toda la página
+17. footer-logo.png (150x75px) - Logo para el pie de página
+18. 70200-logo.png (100x50px) - Logo pequeño de 70-200
+
+Notas:
+- El diseño tiene un estilo de juego infantil/casual con colores brillantes
+- La paleta principal incluye púrpura, naranja, verde y tonos cálidos
+- Usar formato PNG para imágenes que requieran transparencia
+- Los GIFs deben mostrar claramente las mecánicas de juego
+- Las capturas deben tener bordes redondeados y sombras
+- Optimizar todas las imágenes para web sin perder calidad

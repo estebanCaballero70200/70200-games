@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordtris - Pitch Deck</title>
+    <style>
+        body {
+            background-color: #1a1a2e; /* Mismo color de fondo que el index principal */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        iframe {
+            max-width: 100%;
+            height: 85vh;
+            margin-bottom: 20px;
+        }
+        .back-btn {
+            display: inline-block;
+            background-color: #1a1a2e;
+            color: #f5f5f5;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid #fca311;
+            transition: all 0.3s ease;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .text-only-btn {
+            display: inline-block;
+            background-color: transparent;
+            color: #f5f5f5;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 20px;
+            text-align: center;
+            border: none;
+        }
+        .text-only-btn:hover {
+            color: #fca311;
+            transform: translateY(-3px);
+        }
+        .back-btn:hover {
+            background-color: #fca311;
+            color: #1a1a2e;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(252, 163, 17, 0.4);
+        }
+        .buttons-container {
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        
+        .desktop-buttons {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        /* Media queries para dispositivos móviles */
+        @media (max-width: 768px) {
+            iframe {
+                height: 70vh;
+            }
+            .buttons-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                padding: 10px;
+            }
+            .desktop-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .back-btn, .text-only-btn {
+                margin: 10px 0;
+                padding: 15px 30px;
+                font-size: 16px;
+                width: 80%;
+                max-width: 300px;
+                text-align: center;
+            }
+            .text-only-btn {
+                margin-left: 0 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQuh5Aq5I7poxei_9YIqXfZKvGDbxx8cWO0gYessgouLgxU_JR-t903p2MP8Lj-gywWcLwaomi58szp/pubembed?start=false&loop=false&delayms=3000" frameborder="0" style="width: 100%; max-width: 1440px;" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <div class="buttons-container">
+        <!-- Botones adaptados para desktop y móvil -->
+        <div class="desktop-buttons" style="display: flex; justify-content: center; width: 100%;">
+            <a href="https://70200.games/#contact" class="back-btn">Let's do it!</a>
+            <a href="https://wordtris.70200.games" class="text-only-btn" style="margin-left: 100px;">Volver a Wordtris</a>
+        </div>
+    </div>
+</body>
+</html>

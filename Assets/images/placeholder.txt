@@ -1,0 +1,22 @@
+Necesitarás crear y agregar las siguientes imágenes:
+
+1. logo.png (320x160px) - Logo principal
+2. footer-logo.png (100x50px) - Logo pequeño para el footer
+3. wordtris-logo.png (250px de ancho) - Logo del juego Wordtris
+4. wordtris-bg.jpg - Imagen de fondo para la sección del juego (1920x1080px)
+5. service-creative.jpg (150x150px) - Imagen cuadrada para el servicio de diseño creativo
+6. service-web.jpg (150x150px) - Imagen cuadrada para el servicio de desarrollo web
+7. service-mobile.jpg (150x150px) - Imagen cuadrada para el servicio de desarrollo móvil
+8. bg-hero.jpg - Imagen de fondo para la sección hero
+9. bg-about.jpg - Imagen de fondo para la sección about
+10. bg-games.jpg - Imagen de fondo para la sección de juegos
+11. bg-services.jpg - Imagen de fondo para la sección de servicios
+12. bg-contact.jpg - Imagen de fondo para la sección de contacto
+13. device-icon.png - Ícono para el tipo de dispositivo (80x80px)
+14. genre-icon.png - Ícono para el género del juego (80x80px)
+15. subgenre-icon.png - Ícono para el subgénero del juego (80x80px)
+
+Para las imágenes de fondo, usa imágenes de alta resolución (al menos 1920x1080px).
+Para los iconos de device/genre/subgenre, usa imágenes con colores propios que contrasten bien con el fondo azul oscuro (#1a1a2e).
+
+Los archivos HTML en este directorio te proporcionan ejemplos visuales de cómo deberían verse algunos de estos elementos.

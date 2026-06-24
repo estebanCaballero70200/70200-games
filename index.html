@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games 70-200 - Estudio Indie de Desarrollo de Videojuegos</title>
+    <link rel="stylesheet" href="Assets/css/styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="#games" data-i18n="nav_games">Our Games</a></li>
+                    <li><a href="#services" data-i18n="nav_services">Our Work</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+                <!-- Language selector will be added here by JavaScript -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner principal -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Logo como imagen -->
+                <div class="hero-logo">
+                    <img src="Assets/images/logo.png" alt="70-200 Logo">
+                </div>
+            </div>
+        </div>
+        <!-- Indicador de scroll -->
+        <div class="scroll-indicator" title="Desplázate hacia abajo para ver más"></div>
+    </section>
+    
+    <!-- Bloque de descripción separado -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 data-i18n="about_title">ABOUT US</h2>
+            <div class="company-description">
+                <p data-i18n="about_text">70-200 is an indie studio specializing in web and mobile game development. Our team consists of passionate professionals dedicated to creating high-quality interactive experiences, with innovative graphics and game mechanics that captivate players.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestros Juegos -->
+    <section id="games" class="games">
+        <div class="container">
+            <h2 data-i18n="games_title">OUR GAMES</h2>
+            <div class="game-card">
+                <div class="game-info">
+                    <div class="game-title">
+                        <img src="Assets/images/wordtris-logo.png" alt="Wordtris">
+                    </div>
+                    <p class="game-description" data-i18n="wordtris_desc">
+                        Wordtris is a casual mobile video game, in the word puzzle genre, where you must discover words by rearranging falling letters. It will be available for Android and iOS in the first quarter of 2025.
+                    </p>
+                    <div class="game-details">
+                        <div class="detail-item">
+                            <span class="detail-label" data-i18n="game_device">DEVICE</span>
+                            <div class="detail-icon">
+                                <img src="Assets/images/device-icon.png" alt="Device">
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label" data-i18n="game_genre">GENRE</span>
+                            <div class="detail-icon">
+                                <img src="Assets/images/genre-icon.png" alt="Genre">
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label" data-i18n="game_subgenre">SUBGENRE</span>
+                            <div class="detail-icon">
+                                <img src="Assets/images/subgenre-icon.png" alt="Subgenre">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-action">
+                        <a href="/wordtris" class="btn" data-i18n="game_more">More Information</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestro Trabajo -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 data-i18n="services_title">OUR WORK</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="Assets/images/service-creative.png" alt="Creative Design">
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-title" data-i18n="service_creative_title">Creative Design</h3>
+                        <p class="service-description" data-i18n="service_creative_desc">
+                            Our design team provides unique graphics and animations that make each game visually stunning.
+                        </p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="Assets/images/service-web.png" alt="Web Development">
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-title" data-i18n="service_web_title">Web Game Development</h3>
+                        <p class="service-description" data-i18n="service_web_desc">
+                            We develop interactive and dynamic web games that can be enjoyed from any browser, without downloads.
+                        </p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="Assets/images/service-mobile.png" alt="Mobile Development">
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-title" data-i18n="service_mobile_title">Mobile Game Development</h3>
+                        <p class="service-description" data-i18n="service_mobile_desc">
+                            We create attractive and exciting games for mobile devices, ensuring a smooth and immersive user experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-i18n="contact_title">CONTACT</h2>
+            <div class="contact-form">
+                <form id="contactForm" action="https://formsubmit.co/contacto@70200.games" method="POST">
+                    <!-- Configuración FormSubmit -->
+                    <input type="hidden" name="_subject" value="New message from 70-200 Website">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://70200.games/gracias.html">
+                    <input type="hidden" name="_autoresponse" value="false">
+                    
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" data-i18n-placeholder="contact_name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" data-i18n-placeholder="contact_email" placeholder="E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" class="form-control" data-i18n-placeholder="contact_message" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" data-i18n="contact_send">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="Assets/images/footer-logo.png" alt="70-200 Logo">
+                </div>
+                <div class="footer-links">
+                    <a href="#home" data-i18n="nav_home">Home</a>
+                    <a href="#about" data-i18n="nav_about">About Us</a>
+                    <a href="#games" data-i18n="nav_games">Our Games</a>
+                    <a href="#services" data-i18n="nav_services">Our Work</a>
+                    <a href="#contact" data-i18n="nav_contact">Contact</a>
+                </div>
+                <div class="footer-contact">
+                    <p data-i18n="footer_question">Have a question?</p>
+                    <p data-i18n="footer_description">70-200 is a company specializing in mobile and web game development.</p>
+                    <p data-i18n="footer_email">Email: contacto@70200.games</p>
+                    <p data-i18n="footer_web">Web: www.70200.games</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="terms-and-conditions.html">Términos y Condiciones</a> | 
+                    <a href="privacy-delete.html">Política de Privacidad</a>
+                </div>
+                <p class="footer-text" data-i18n="footer_copyright">© 2025 Games 70-200. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script files -->
+    <script src="Assets/js/main.js"></script>
+    <script>
+        // Translations for all languages
+        const translations = {
+            en: {
+                'nav_home': 'Home',
+                'nav_about': 'About Us',
+                'nav_games': 'Our Games',
+                'nav_services': 'Our Work',
+                'nav_contact': 'Contact',
+                'about_title': 'ABOUT US',
+                'about_text': '70-200 is an indie studio specializing in web and mobile game development. Our team consists of passionate professionals dedicated to creating high-quality interactive experiences, with innovative graphics and game mechanics that captivate players.',
+                'games_title': 'OUR GAMES',
+                'wordtris_desc': 'Wordtris is a casual mobile video game, in the word puzzle genre, where you must discover words by rearranging falling letters. It will be available for Android and iOS in the first quarter of 2025.',
+                'game_device': 'Mobile',
+                'game_genre': 'Puzzle',
+                'game_subgenre': 'Words',
+                'game_more': 'More Information',
+                'services_title': 'OUR WORK',
+                'service_creative_title': 'Creative Design',
+                'service_creative_desc': 'Our design team provides unique graphics and animations that make each game visually stunning.',
+                'service_web_title': 'Web Game Development',
+                'service_web_desc': 'We develop interactive and dynamic web games that can be enjoyed from any browser, without downloads.',
+                'service_mobile_title': 'Mobile Game Development',
+                'service_mobile_desc': 'We create attractive and exciting games for mobile devices, ensuring a smooth and immersive user experience.',
+                'contact_title': 'CONTACT',
+                'contact_name': 'Name',
+                'contact_email': 'E-mail',
+                'contact_message': 'Message',
+                'contact_send': 'Send Message',
+                'footer_question': 'Have a question?',
+                'footer_description': '70-200 is a company specializing in mobile and web game development.',
+                'footer_email': 'Email: contacto@70200.games',
+                'footer_web': 'Web: www.70200.games',
+                'footer_copyright': '© 2025 70-200. All rights reserved.'
+            },
+            es: {
+                'nav_home': 'Inicio',
+                'nav_about': 'Nosotros',
+                'nav_games': 'Nuestros Juegos',
+                'nav_services': 'Nuestro Trabajo',
+                'nav_contact': 'Contacto',
+                'about_title': 'NOSOTROS',
+                'about_text': '70-200 es un estudio indie especializado en el desarrollo de videojuegos web y móviles. Nuestro equipo está formado por profesionales apasionados por crear experiencias interactivas de alta calidad, con gráficos y mecánicas de juego innovadoras que cautivan a los jugadores.',
+                'games_title': 'NUESTROS JUEGOS',
+                'wordtris_desc': 'Wordtris es un videojuego móvil casual, del género de puzzles de palabras, donde debes descubrir palabras reorganizando letras que caen. Estará disponible para Android e iOS en el primer trimestre de 2025.',
+                'game_device': 'Móvil',
+                'game_genre': 'Puzzle',
+                'game_subgenre': 'Palabras',
+                'game_more': 'Más información',
+                'services_title': 'NUESTRO TRABAJO',
+                'service_creative_title': 'Diseño Creativo',
+                'service_creative_desc': 'Nuestro equipo de diseño proporciona gráficos y animaciones únicos que hacen que cada juego sea visualmente impresionante.',
+                'service_web_title': 'Desarrollo de Videojuegos Web',
+                'service_web_desc': 'Desarrollamos juegos web interactivos y dinámicos que pueden ser disfrutados desde cualquier navegador, sin necesidad de descargas.',
+                'service_mobile_title': 'Desarrollo de Videojuegos Mobile',
+                'service_mobile_desc': 'Creamos juegos atraentes y emocionantes para dispositivos móviles, garantizando una experiência de usuário fluida e envolvente.',
+                'contact_title': 'CONTACTO',
+                'contact_name': 'Nombre',
+                'contact_email': 'E-mail',
+                'contact_message': 'Mensaje',
+                'contact_send': 'Enviar Mensaje',
+                'footer_question': '¿Tienes alguna pregunta?',
+                'footer_description': '70-200 es una empresa que se especializa en desarrollo de videojuegos móviles y web.',
+                'footer_email': 'Email: contacto@70200.games',
+                'footer_web': 'Web: www.70200.games',
+                'footer_copyright': '© 2025 70-200. Todos los derechos reservados.'
+            },
+            ru: {
+                'nav_home': 'Главная',
+                'nav_about': 'О нас',
+                'nav_games': 'Наши игры',
+                'nav_services': 'Наша работа',
+                'nav_contact': 'Контакты',
+                'about_title': 'О НАС',
+                'about_text': '70-200 — это инди-студия, специализирующаяся на разработке веб- и мобильных игр. Наша команда состоит из увлеченных профессионалов, создающих интерактивные проекты высокого качества с инновационной графикой и механикой, захватывающей игроков.',
+                'games_title': 'НАШИ ИГРЫ',
+                'wordtris_desc': 'Wordtris — это казуальная мобильная видеоигра в жанре словесных головоломок, где вы должны составлять слова из падающих букв. Она будет доступна для Android и iOS в первом квартале 2025 года.',
+                'game_device': 'Мобильный',
+                'game_genre': 'Головоломка',
+                'game_subgenre': 'Слова',
+                'game_more': 'Подробнее',
+                'services_title': 'НАША РАБОТА',
+                'service_creative_title': 'Креативный дизайн',
+                'service_creative_desc': 'Наша команда дизайнеров создает уникальную графику и анимацию, которые делают каждую игру визуально потрясающей.',
+                'service_web_title': 'Разработка веб-игр',
+                'service_web_desc': 'Мы разрабатываем интерактивные и динамичные веб-игры, в которые можно играть из любого браузера без загрузок.',
+                'service_mobile_title': 'Разработка мобильных игр',
+                'service_mobile_desc': 'Мы создаем привлекательные и захватывающие игры для мобильных устройств, обеспечивая плавный и захватывающий пользовательский опыт.',
+                'contact_title': 'КОНТАКТЫ',
+                'contact_name': 'Имя',
+                'contact_email': 'E-mail',
+                'contact_message': 'Сообщение',
+                'contact_send': 'Отправить сообщение',
+                'footer_question': 'Есть вопросы?',
+                'footer_description': '70-200 — компания, специализирующаяся на разработке мобильных и веб-игр.',
+                'footer_email': 'Email: contacto@70200.games',
+                'footer_web': 'Веб-сайт: www.70200.games',
+                'footer_copyright': '© 2025 70-200. Все права защищены.'
+            },
+            pt: {
+                'nav_home': 'Início',
+                'nav_about': 'Sobre Nós',
+                'nav_games': 'Nossos Jogos',
+                'nav_services': 'Nosso trabalho',
+                'nav_contact': 'Contato',
+                'about_title': 'SOBRE NÓS',
+                'about_text': '70-200 é um estúdio indie especializado no desenvolvimento de jogos web e móveis. Nossa equipe é formada por profissionais apaixonados por criar experiências interativas de alta qualidade, com gráficos e mecânicas de jogo inovadoras que cativam os jogadores.',
+                'games_title': 'NOSSOS JOGOS',
+                'wordtris_desc': 'Wordtris é um videogame móvel casual, do gênero de quebra-cabeças de palavras, onde você deve descobrir palavras reorganizando letras que caem. Estará disponível para Android e iOS no primeiro trimestre de 2025.',
+                'game_device': 'Mobile',
+                'game_genre': 'Quebra-cabeça',
+                'game_subgenre': 'Palavras',
+                'game_more': 'Mais informação',
+                'services_title': 'NOSSO TRABALHO',
+                'footer_question': 'Ao enviar o formulário, você receberá um e-mail de ativação no endereço de e-mail fornecido.',
+                'footer_description': '70-200 é uma empresa especializada no desenvolvimento de jogos móveis e web.',
+                'footer_email': 'Email: contacto@70200.games',
+                'footer_web': 'Web: www.70200.games',
+                'footer_copyright': '© 2025 70-200. Todos os direitos reservados.'
+            }
+        };
+
+        // Simplified language manager - direct implementation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Language selector HTML structure
+            const createLanguageSelector = () => {
+                const nav = document.querySelector('nav');
+                if (!nav) return;
+                
+                const selector = document.createElement('div');
+                selector.className = 'language-selector';
+                
+                const selectedLang = document.createElement('div');
+                selectedLang.className = 'selected-lang';
+                selectedLang.id = 'selected-lang';
+                selectedLang.textContent = currentLanguage.toUpperCase();
+                selectedLang.onclick = toggleLanguageMenu;
+                
+                const options = document.createElement('div');
+                options.className = 'lang-options';
+                options.id = 'lang-options';
+                
+                selector.appendChild(selectedLang);
+                selector.appendChild(options);
+                nav.appendChild(selector);
+                
+                updateLanguageOptions();
+            };
+            
+            // Toggle language dropdown menu
+            const toggleLanguageMenu = () => {
+                const selector = document.querySelector('.language-selector');
+                if (selector) {
+                    selector.classList.toggle('active');
+                }
+            };
+            
+            // Update language dropdown options
+            const updateLanguageOptions = () => {
+                const options = document.getElementById('lang-options');
+                if (!options) return;
+                
+                options.innerHTML = '';
+                
+                const languages = Object.keys(translations);
+                languages.forEach(lang => {
+                    if (lang !== currentLanguage) {
+                        const option = document.createElement('div');
+                        option.className = 'lang-option';
+                        option.textContent = lang.toUpperCase();
+                        option.onclick = function() {
+                            changeLanguage(lang);
+                            toggleLanguageMenu();
+                        };
+                        options.appendChild(option);
+                    }
+                });
+            };
+            
+            // Change current language
+            const changeLanguage = (lang) => {
+                if (translations[lang] && lang !== currentLanguage) {
+                    currentLanguage = lang;
+                    localStorage.setItem('70200Language', lang);
+                    
+                    const selectedLangElement = document.getElementById('selected-lang');
+                    if (selectedLangElement) {
+                        selectedLangElement.textContent = lang.toUpperCase();
+                    }
+                    
+                    applyTranslations();
+                    updateLanguageOptions();
+                    
+                    // Update HTML lang attribute
+                    document.documentElement.lang = lang;
+                }
+            };
+            
+            // Apply translations to the page
+            const applyTranslations = () => {
+                const currentTranslations = translations[currentLanguage];
+                
+                // Translate text content
+                document.querySelectorAll('[data-i18n]').forEach(element => {
+                    const key = element.getAttribute('data-i18n');
+                    if (currentTranslations[key]) {
+                        element.textContent = currentTranslations[key];
+                    }
+                });
+                
+                // Translate placeholders
+                document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+                    const key = element.getAttribute('data-i18n-placeholder');
+                    if (currentTranslations[key]) {
+                        element.placeholder = currentTranslations[key];
+                    }
+                });
+            };
+            
+            // Initialize everything
+            // Get stored language or default to English
+            let currentLanguage = localStorage.getItem('70200Language') || 'en';
+            if (!translations[currentLanguage]) {
+                currentLanguage = 'en'; // Fallback to English
+            }
+            
+            // Create language selector
+            createLanguageSelector();
+            
+            // Apply initial translations
+            applyTranslations();
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                const selector = document.querySelector('.language-selector');
+                if (selector && !selector.contains(e.target)) {
+                    selector.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordtris - Un juego de palabras por 70-200</title>
+    <link rel="canonical" href="https://70200.games/wordtris">
+    <link rel="stylesheet" href="Assets/css/styles.css">
+    <link rel="stylesheet" href="Assets/css/popup.css">
+    <link rel="stylesheet" href="Assets/css/language-selector.css">
+    <link rel="icon" href="Assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Hero Banner Section -->
+    <header class="hero-banner">
+        <div class="banner-overlay"></div>
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" title="Desplázate hacia abajo para ver más" data-i18n-title="scroll_to"></div>
+        <!-- Language selector will be added here by JavaScript -->
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+        <div class="container">
+            <div class="main-block">
+                <!-- Game Info Block -->
+                <div class="content-block game-info-block">
+                    <div class="game-info-container">
+                        <!-- Left column: Character -->
+                        <div class="character-container">
+                            <img src="Assets/images/character-mascot.png" alt="Wordtris Character">
+                        </div>
+                        <!-- Right column: Description and Platform Buttons -->
+                        <div class="info-right-column">
+                            <div class="game-leyend">
+                                <p data-i18n="wordtris_tagline">Your new Word-Puzzle adventure!</p>
+                            </div>
+                            <div class="game-description">
+                                <p data-i18n="wordtris_desc">Wordtris is a mobile casual video game, of the word puzzle genre, where you must discover words by rearranging the letters that fall, in a clear nod to the all-time classic Tetris. It will be ready for release on Android and iOS in the first quarter of 2025.</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gameplay Block -->
+                <div class="content-block gameplay-block">
+                    <div class="gameplay-section">
+                        <div class="gameplay-left">
+                            <img src="Assets/images/gameplay-left.gif" alt="Gameplay Left">
+                        </div>
+                        <div class="gameplay-center">
+                            <div class="gameplay-mechanics">
+                                <p class="mechanic-text" data-i18n="mechanic_1">Move left, right and accelerate the falling letter</p>
+                                <img src="Assets/images/mechanic-1.png" alt="Game Mechanic 1" class="mechanic-image">
+                                <p class="mechanic-text" data-i18n="mechanic_2">Rearrange the letters at their base</p>
+                                <img src="Assets/images/mechanic-2.png" alt="Game Mechanic 2" class="mechanic-image">
+                                <p class="mechanic-text" data-i18n="mechanic_3">Guess the hidden Word</p>
+                                <img src="Assets/images/mechanic-3.png" alt="Game Mechanic 3" class="mechanic-image">
+                            </div>
+                        </div>
+                        <div class="gameplay-right">
+                            <img src="Assets/images/gameplay-right.gif" alt="Gameplay Right">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Wordtris Logo Block -->
+                <div class="content-block logo-block">
+                    <div class="wordtris-logo">
+                        <img src="Assets/images/wordtris-logo.png" alt="Wordtris Logo">
+                    </div>
+                    <div class="platform-details">
+                        <div class="detail-row">
+                            <span class="detail-label" data-i18n="game_device">DEVICE</span>
+                            <img src="Assets/images/platform-button-1.png" alt="Device">
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label" data-i18n="game_genre">GENRE</span>
+                            <img src="Assets/images/platform-button-2.png" alt="Genre">
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label" data-i18n="game_subgenre">SUBGENRE</span>
+                            <img src="Assets/images/platform-button-3.png" alt="Subgenre">
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Screenshots Block -->
+                <div class="content-block screenshots-block">
+                    <div class="screenshots-slider-container">
+                        <div class="screenshots-slider">
+                            <div class="screenshot-item">
+                                <img src="Assets/images/screenshot-1.jpg" alt="Screenshot 1">
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="Assets/images/screenshot-2.jpg" alt="Screenshot 2">
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="Assets/images/screenshot-3.jpg" alt="Screenshot 3">
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="Assets/images/screenshot-4.jpg" alt="Screenshot 4">
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="Assets/images/screenshot-5.jpg" alt="Screenshot 5">
+                            </div>
+                        </div>
+                        <div class="slider-controls">
+                            <button class="slider-prev">&#10094;</button>
+                            <button class="slider-next">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- App Stores Block -->
+                <div class="content-block stores-block">
+                    <div class="stores-container">
+                        <div class="store-logo">
+                            <a href="#" class="store-link store-popup-trigger">
+                                <img src="Assets/images/playstore-logo.png" alt="Google Play Store">
+                            </a>
+                        </div>
+                        <div class="store-logo">
+                            <a href="#" class="store-link store-popup-trigger">
+                                <img src="Assets/images/appstore-logo.png" alt="Apple App Store">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Popup Overlay -->
+    <div class="store-popup-overlay">
+        <div class="store-popup">
+            <button class="popup-close">&times;</button>
+            <div class="popup-content">
+                <h2 class="popup-title" data-i18n="popup_title">Coming Soon!</h2>
+                <p class="popup-text" data-i18n="popup_text">Wordtris will be available on September 2025. Get ready for an exciting word-puzzle adventure!</p>
+            </div>
+            <div class="popup-character">
+                <img src="Assets/images/personaje-popup.png" alt="Wordtris Character">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="https://70200.games">
+                        <img src="Assets/images/footer-logo.png" alt="70-200 Logo">
+                    </a>
+                </div>
+                <!-- 
+                <div class="footer-social">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div> -->
+                <p class="footer-text" data-i18n="footer_copyright">© 2025 70-200. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="Assets/js/main.js"></script>
+    
+    <script>
+        // Store popup functionality
+        const storeLinks = document.querySelectorAll('.store-link');
+        const popupOverlay = document.querySelector('.store-popup-overlay');
+        const popupClose = document.querySelector('.popup-close');
+    
+        storeLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                popupOverlay.style.display = 'flex';
+            });
+        });
+    
+        popupClose.addEventListener('click', () => {
+            popupOverlay.style.display = 'none';
+        });
+    
+        popupOverlay.addEventListener('click', (e) => {
+            if (e.target === popupOverlay) {
+                popupOverlay.style.display = 'none';
+            }
+        });
+
+        // Translations for all languages
+        const translations = {
+            en: {
+                'wordtris_tagline': 'Your new Word-Puzzle adventure!',
+                'wordtris_desc': 'Wordtris is a mobile casual video game, of the word puzzle genre, where you must discover words by rearranging the letters that fall, in a clear nod to the all-time classic Tetris. It will be ready for release on Android and iOS in the first quarter of 2025.',
+                'mechanic_1': 'Move left, right and accelerate the falling letter',
+                'mechanic_2': 'Rearrange the letters at their base',
+                'mechanic_3': 'Guess the hidden Word',
+                'game_device': 'DEVICE',
+                'game_genre': 'GENRE',
+                'game_subgenre': 'SUBGENRE',
+                'popup_title': 'Coming Soon!',
+                'popup_text': 'Wordtris will be available on September 2025. Get ready for an exciting word-puzzle adventure!',
+                'footer_copyright': '© 2025 70-200. All rights reserved.',
+                'scroll_to': 'Scroll down to see more'
+            },
+            es: {
+                'wordtris_tagline': '¡Tu nueva aventura de Puzzle de palabras!',
+                'wordtris_desc': 'Wordtris es un videojuego móvil casual, del género de puzzles de palabras, donde debes descubrir palabras reorganizando letras que caen, en un claro guiño al clásico de todos los tiempos Tetris. Estará listo para su lanzamiento en Android e iOS en el primer trimestre de 2025.',
+                'mechanic_1': 'Mueve a izquierda, derecha y acelera la caída de la letra',
+                'mechanic_2': 'Reorganiza las letras en su base',
+                'mechanic_3': 'Adivina la palabra oculta',
+                'game_device': 'DISPOSITIVO',
+                'game_genre': 'GÉNERO',
+                'game_subgenre': 'SUBGÉNERO',
+                'popup_title': '¡Próximamente!',
+                'popup_text': 'Wordtris estará disponible en septiembre de 2025. ¡Prepárate para una emocionante aventura de puzzle de palabras!',
+                'footer_copyright': '© 2025 70-200. Todos los derechos reservados.',
+                'scroll_to': 'Desplázate hacia abajo para ver más'
+            },
+            ru: {
+                'wordtris_tagline': 'Твоё новое приключение в мире словесных головоломок!',
+                'wordtris_desc': 'Wordtris — это казуальная мобильная видеоигра в жанре словесных головоломок, где вы должны составлять слова из падающих букв, в явной отсылке к вечной классике Tetris. Она будет готова к выпуску на Android и iOS в первом квартале 2025 года.',
+                'mechanic_1': 'Двигайте влево, вправо и ускоряйте падение буквы',
+                'mechanic_2': 'Перестраивайте буквы в их основании',
+                'mechanic_3': 'Угадайте скрытое слово',
+                'game_device': 'УСТРОЙСТВО',
+                'game_genre': 'ЖАНР',
+                'game_subgenre': 'ПОДЖАНР',
+                'popup_title': 'Скоро!',
+                'popup_text': 'Wordtris будет доступен в сентябре 2025 года. Готовьтесь к захватывающему приключению в мире словесных головоломок!',
+                'footer_copyright': '© 2025 70-200. Все права защищены.',
+                'scroll_to': 'Прокрутите вниз, чтобы увидеть больше'
+            },
+            pt: {
+                'wordtris_tagline': 'Sua nova aventura de quebra-cabeças de palavras!',
+                'wordtris_desc': 'Wordtris é um videogame móvel casual, do gênero de quebra-cabeças de palavras, onde você deve descobrir palavras reorganizando letras que caem, em uma clara referência ao clássico de todos os tempos Tetris. Estará pronto para lançamento no Android e iOS no primeiro trimestre de 2025.',
+                'mechanic_1': 'Mova para a esquerda, direita e acelere a queda da letra',
+                'mechanic_2': 'Reorganize as letras em sua base',
+                'mechanic_3': 'Adivinhe a palavra escondida',
+                'game_device': 'DISPOSITIVO',
+                'game_genre': 'GÊNERO',
+                'game_subgenre': 'SUBGÊNERO',
+                'popup_title': 'Em breve!',
+                'popup_text': 'Wordtris estará disponível em setembro de 2025. Prepare-se para uma emocionante aventura de quebra-cabeças de palavras!',
+                'footer_copyright': '© 2025 70-200. Todos os direitos reservados.',
+                'scroll_to': 'Role para baixo para ver mais'
+            }
+        };
+
+        // Simplified language manager - direct implementation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Language selector HTML structure
+            const createLanguageSelector = () => {
+                const header = document.querySelector('header');
+                if (!header) return;
+                
+                const selector = document.createElement('div');
+                selector.className = 'language-selector';
+                
+                const selectedLang = document.createElement('div');
+                selectedLang.className = 'selected-lang';
+                selectedLang.id = 'selected-lang';
+                selectedLang.textContent = currentLanguage.toUpperCase();
+                selectedLang.onclick = toggleLanguageMenu;
+                
+                const options = document.createElement('div');
+                options.className = 'lang-options';
+                options.id = 'lang-options';
+                
+                selector.appendChild(selectedLang);
+                selector.appendChild(options);
+                header.appendChild(selector);
+                
+                updateLanguageOptions();
+            };
+            
+            // Toggle language dropdown menu
+            const toggleLanguageMenu = () => {
+                const selector = document.querySelector('.language-selector');
+                if (selector) {
+                    selector.classList.toggle('active');
+                }
+            };
+            
+            // Update language dropdown options
+            const updateLanguageOptions = () => {
+                const options = document.getElementById('lang-options');
+                if (!options) return;
+                
+                options.innerHTML = '';
+                
+                const languages = Object.keys(translations);
+                languages.forEach(lang => {
+                    if (lang !== currentLanguage) {
+                        const option = document.createElement('div');
+                        option.className = 'lang-option';
+                        option.textContent = lang.toUpperCase();
+                        option.onclick = function() {
+                            changeLanguage(lang);
+                            toggleLanguageMenu();
+                        };
+                        options.appendChild(option);
+                    }
+                });
+            };
+            
+            // Change current language
+            const changeLanguage = (lang) => {
+                if (translations[lang] && lang !== currentLanguage) {
+                    currentLanguage = lang;
+                    localStorage.setItem('70200Language', lang);
+                    
+                    const selectedLangElement = document.getElementById('selected-lang');
+                    if (selectedLangElement) {
+                        selectedLangElement.textContent = lang.toUpperCase();
+                    }
+                    
+                    applyTranslations();
+                    updateLanguageOptions();
+                    
+                    // Update HTML lang attribute
+                    document.documentElement.lang = lang;
+                }
+            };
+            
+            // Apply translations to the page
+            const applyTranslations = () => {
+                const currentTranslations = translations[currentLanguage];
+                
+                // Translate text content
+                document.querySelectorAll('[data-i18n]').forEach(element => {
+                    const key = element.getAttribute('data-i18n');
+                    if (currentTranslations[key]) {
+                        element.textContent = currentTranslations[key];
+                    }
+                });
+                
+                // Translate title attributes
+                document.querySelectorAll('[data-i18n-title]').forEach(element => {
+                    const key = element.getAttribute('data-i18n-title');
+                    if (currentTranslations[key]) {
+                        element.title = currentTranslations[key];
+                    }
+                });
+            };
+            
+            // Initialize everything
+            // Get stored language or default to English
+            let currentLanguage = localStorage.getItem('70200Language') || 'en';
+            if (!translations[currentLanguage]) {
+                currentLanguage = 'en'; // Fallback to English
+            }
+            
+            // Create language selector
+            createLanguageSelector();
+            
+            // Apply initial translations
+            applyTranslations();
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                const selector = document.querySelector('.language-selector');
+                if (selector && !selector.contains(e.target)) {
+                    selector.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

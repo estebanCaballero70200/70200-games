@@ -450,7 +450,7 @@ nav {
     grid-template-columns: minmax(0, 1fr);
     max-width: 900px;
     margin: 0 auto;
-    gap: 30px;
+    gap: 60px;
 }
 
 .production-card {

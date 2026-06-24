@@ -419,8 +419,8 @@ nav {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Nuestro Trabajo */
-.services {
+/* En producción */
+.production {
     background-color: #14142b;
     position: relative;
     background-attachment: fixed;
@@ -429,7 +429,7 @@ nav {
     background-size: cover;
 }
 
-.services::before {
+.production::before {
     content: '';
     position: absolute;
     top: 0;
@@ -440,68 +440,69 @@ nav {
     z-index: 1;
 }
 
-.services .container {
+.production .container {
     position: relative;
     z-index: 2;
 }
 
-.services-grid {
+.production-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 30px;
 }
 
-.service-card {
-    background-color: rgba(255, 255, 255, 0.1);
+.production-card {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    min-height: 260px;
     border-radius: 10px;
     overflow: hidden;
     color: #f5f5f5;
     transition: transform 0.3s, box-shadow 0.3s;
-    padding: 30px;
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #303049;
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.service-card:hover {
-    transform: translateY(-10px);
+.production-card:hover {
+    transform: translateY(-6px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
-.service-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 30px;
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.service-image img {
+.production-image-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: transform 0.3s ease;
+    background:
+        linear-gradient(135deg, rgba(252, 163, 17, 0.2), rgba(26, 26, 46, 0.25)),
+        repeating-linear-gradient(45deg, #41415c 0, #41415c 12px, #36364f 12px, #36364f 24px);
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
-.service-card:hover .service-image img {
-    transform: scale(1.1);
+.production-info {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 24px;
+    background-color: rgba(26, 26, 46, 0.88);
 }
 
-.service-info {
-    text-align: center;
-}
-
-.service-title {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+.production-info h3 {
+    margin-bottom: 8px;
     color: #fca311;
+    font-size: 1.35rem;
 }
 
-.service-description {
-    color: #f5f5f5;
+.production-info p {
+    color: #f8f0dd;
+    font-size: 0.95rem;
 }
 
 /* Contacto */
@@ -641,6 +642,10 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .production-grid {
+        grid-template-columns: 1fr;
+    }
+
     .game-info {
         padding: 40px 30px;
         max-width: 90%;
@@ -669,15 +674,6 @@ footer {
         font-size: 2rem;
     }
     
-    .service-card {
-        padding: 20px;
-    }
-    
-    .service-image {
-        width: 120px;
-        height: 120px;
-    }
-    
     .hero {
         padding: 100px 0 60px;
     }
@@ -701,10 +697,6 @@ footer {
 }
 
 @media (max-width: 576px) {
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-    
     .hero-logo {
         max-width: 375px;
     }

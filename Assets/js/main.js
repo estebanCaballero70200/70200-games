@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'hero': 'Assets/images/bg-hero.jpg',
         'about': 'Assets/images/bg-about.jpg',
         'games': 'Assets/images/bg-games.jpg',
-        'services': 'Assets/images/bg-services.jpg',
+        'production': 'Assets/images/bg-services.jpg',
         'contact': 'Assets/images/bg-contact.jpg'
     };
     

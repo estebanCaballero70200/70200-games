@@ -515,6 +515,10 @@ nav {
     line-height: 1.25;
 }
 
+.production-info p + p:not(.production-status) {
+    margin-top: 8px;
+}
+
 .production-status {
     margin-top: auto;
     padding-top: 12px;

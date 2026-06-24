@@ -499,8 +499,8 @@ nav {
 }
 
 .production-logo {
-    width: min(200px, 100%);
-    margin: 0 auto 22px;
+    width: min(160px, 100%);
+    margin: 0 auto 12px;
 }
 
 .production-logo img {
@@ -511,15 +511,15 @@ nav {
 
 .production-info p {
     color: #f8f0dd;
-    font-size: 0.9rem;
-    line-height: 1.35;
+    font-size: 0.7rem;
+    line-height: 1.25;
 }
 
 .production-status {
     margin-top: auto;
-    padding-top: 20px;
+    padding-top: 12px;
     color: #fca311 !important;
-    font-size: 0.75rem !important;
+    font-size: 0.65rem !important;
     font-weight: 700;
     letter-spacing: 0.5px;
     text-transform: uppercase;

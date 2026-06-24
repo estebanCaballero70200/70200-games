@@ -471,19 +471,18 @@ nav {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
-.production-art-placeholder {
+.production-art {
     position: absolute;
     inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #2b2b5a, #202047);
-    color: rgba(255, 255, 255, 0.35);
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 1px;
+}
+
+.production-art img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .production-info {
@@ -499,21 +498,15 @@ nav {
     background-color: rgba(26, 26, 46, 0.88);
 }
 
-.production-logo-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    min-width: 150px;
-    min-height: 58px;
-    padding: 10px 14px;
+.production-logo {
+    width: min(200px, 100%);
     margin: 0 auto 22px;
-    border: 2px solid #f8f0dd;
-    background-color: rgba(248, 240, 221, 0.75);
-    color: #1a1a2e;
-    font-size: 1.1rem;
-    font-weight: 800;
-    text-align: center;
+}
+
+.production-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .production-info p {

@@ -15,7 +15,7 @@ const translations_en = {
     
     // Games section
     'games_title': 'OUR GAMES',
-    'wordtris_desc': 'Wordtris is a casual mobile video game, in the word puzzle genre, where you must discover words by rearranging falling letters. It will be available for Android and iOS in the first quarter of 2025.',
+    'wordtris_desc': 'Wordtris is a casual mobile video game, in the word puzzle genre, where you must discover words by rearranging falling letters. It will be available for Android and iOS in the first quarter of 2027.',
     'game_device': 'Mobile',
     'game_genre': 'Puzzle',
     'game_subgenre': 'Words',

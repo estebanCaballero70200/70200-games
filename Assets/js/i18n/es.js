@@ -15,7 +15,7 @@ const translations_es = {
     
     // Games section
     'games_title': 'NUESTROS JUEGOS',
-    'wordtris_desc': 'Wordtris es un videojuego móvil casual, del género de puzzles de palabras, donde debes descubrir palabras reorganizando letras que caen. Estará disponible para Android e iOS en el primer trimestre de 2025.',
+    'wordtris_desc': 'Wordtris es un videojuego móvil casual, del género de puzzles de palabras, donde debes descubrir palabras reorganizando letras que caen. Estará disponible para Android e iOS en el primer trimestre de 2027.',
     'game_device': 'Móvil',
     'game_genre': 'Puzzle',
     'game_subgenre': 'Palabras',
